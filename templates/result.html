@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resultado del Clima</title>
-</head>
-<body>
+    <link rel="stylesheet" href="../static/styles.css" />
+    <link rel="stylesheet" href="../static/result.css" />
+  </head>
+  <body>
     <h1>Clima en {{ city }}</h1>
-    <p><strong>Temperatura:</strong> {{ temperature }} °C</p>
-    <p><strong>Descripción:</strong> {{ description }}</p>
-    <p><strong>Humedad:</strong> {{ humidity }}%</p>
-    <br>
-    <a href="/">Volver a consultar otra ciudad</a>
-</body>
+    <div class="card">
+      <div class="weather-animation">
+        <div class="cloud front">
+          <span class="left-front"></span>
+          <span class="right-front"></span>
+        </div>
+        <span class="sun sunshine"></span>
+        <span class="sun"></span>
+        <div class="cloud back">
+          <span class="left-back"></span>
+          <span class="right-back"></span>
+        </div>
+      </div>
+      <div class="weather-info">
+        <p><strong>Temperatura:</strong> {{ temperature }} °C</p>
+        <p><strong>Descripción:</strong> {{ description }}</p>
+        <p><strong>Humedad:</strong> {{ humidity }}%</p>
+        <br />
+        <a href="/"><button class="button">  Buscar otra ciudad
+  <div class="hoverEffect">
+    <div></div>
+  </div></button></a>
+      </div>
+    </div>
+  </body>
+
+  <footer class="foot">2024 | Josmary Pirela & Edward Villalobos</footer>
 </html>

@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Error</title>
-</head>
-<body>
-    <h1>Error</h1>
-    <p>{{ message }}</p>
-    <br>
-    <a href="/">Volver a consultar otra ciudad</a>
-</body>
+    <link rel="stylesheet" href="../static/styles.css" />
+    <link rel="stylesheet" href="../static/result.css" />
+  </head>
+  <body>
+    <div class="card">
+              <div class="weather-animation">
+        <div class="cloud front">
+          <span class="left-front"></span>
+          <span class="right-front"></span>
+        </div>
+        <span class="sun sunshine"></span>
+        <span class="sun"></span>
+        <div class="cloud back">
+          <span class="left-back"></span>
+          <span class="right-back"></span>
+        </div>
+      </div>
+        <div class="info">
+      <h1>Error</h1>
+      <p>{{ message }}</p>
+      <br />
+      <a href="/"
+        ><button class="button">
+          Consultar otra ciudad
+          <div class="hoverEffect">
+            <div></div>
+          </div></button
+      ></a>
+        </div>
+
+    </div>
+  </body>
 </html>

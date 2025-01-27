@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Consultar Clima</title>
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@500&family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/styles.css" />
+  </head>
+  <body>
     <h1>Consultar Clima</h1>
-    <form action="/get_weather" method="POST">
-        <label for="city">Ingresa el nombre de la ciudad:</label>
-        <input type="text" id="city" name="city" required>
-        <button type="submit">Consultar</button>
-    </form>
-</body>
+    <div class="container">
+      <img
+        src="../static/img/undraw_my-current-location_tudq.svg"
+        alt="location"
+      />
+      <div class="card">
+        <form action="/get_weather" method="POST">
+          <label for="city">Ingresa el nombre de la ciudad:</label>
+          <input type="text" id="city" name="city" required />
+          <button class="button" type="submit">
+            Consultar
+            <div class="hoverEffect">
+              <div></div>
+            </div>
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <footer class="foot">2024 | Josmary Pirela & Edward Villalobos</footer>
 </html>
